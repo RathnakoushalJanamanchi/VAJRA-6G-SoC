@@ -509,13 +509,6 @@ vajra_6g_soc/
 │   ├── 🖼️  vajra_core_logic.png        # Core logic diagram
 │   ├── 📊 vajra_6g_soc.dot            # DOT graph (full SoC)
 │   └── 📊 vajra_core_logic.dot        # DOT graph (core logic)
-│
-└── runs/
-    └── RUN_2025.12.28_12.58.12/
-        ├── reports/synthesis/         # Cell statistics, DFF counts
-        ├── logs/synthesis/            # Full Yosys + ABC log
-        ├── config.tcl                 # Resolved OpenLane config
-        └── runtime.yaml               # Step timing
 ```
 
 ---

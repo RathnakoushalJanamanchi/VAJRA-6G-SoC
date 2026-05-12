@@ -1,0 +1,35 @@
+# Pin Placement for Vajra-6G SoC
+
+# Clock and Reset
+set_io clk K14
+set_io resetn K15
+
+# Memory Interface (Placeholder)
+set_io ram_wbm_ack_i A1
+# ... more RAM pins
+
+# Flash Interface
+set_io flash_csb E1
+set_io flash_clk E2
+set_io flash_io0 E3
+set_io flash_io1 E4
+
+# UART
+set_io serial_tx B1
+set_io serial_rx B2
+
+# GPIO
+set_io gpio_pins[0] C1
+set_io gpio_pins[1] C2
+set_io gpio_pins[2] C3
+set_io gpio_pins[3] C4
+set_io gpio_pins[4] C5
+set_io gpio_pins[5] C6
+set_io gpio_pins[6] C7
+set_io gpio_pins[7] C8
+
+# SPI
+set_io spi_sclk D1
+set_io spi_mosi D2
+set_io spi_miso D3
+set_io spi_cs_n D4

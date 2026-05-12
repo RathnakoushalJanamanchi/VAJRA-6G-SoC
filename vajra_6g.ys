@@ -1,0 +1,22 @@
+# Synthesis script for Vajra-6G SoC
+
+read_verilog sky130_stub.v
+read_verilog picorv64_vajra.v
+read_verilog pcpi_kyber.v
+read_verilog wb_cache.v
+read_verilog wb_dma.v
+read_verilog simpleuart.v
+read_verilog wb_kyber.v
+read_verilog wb_gpio.v
+read_verilog wb_spi.v
+read_verilog wb_timer.v
+read_verilog wb_trng.v
+read_verilog wb_spiflash.v
+read_verilog wb_intercon.v
+read_verilog vajra_6g_core.v
+read_verilog vajra_6g_soc.v
+
+synth_xilinx -top vajra_6g_soc
+
+write_verilog synth_vajra_6g.v
+write_edif synth_vajra_6g.edif
